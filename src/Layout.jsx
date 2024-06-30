@@ -7,7 +7,7 @@ function Layout() {
   const [currentNav, setCurrentNav] = useState("Home");
   const [searchQuery, setSearchQuery] = useState("");
 
-  sreturn (
+  return (
     <div className="flex w-screen h-screen ">
       <div
         className="hidden lg:bg-semiDarkBlue lg:flex lg:justify-center 
