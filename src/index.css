@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Outfit";
+}
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+  color: white;
+  background-color: #10141e;
+}
