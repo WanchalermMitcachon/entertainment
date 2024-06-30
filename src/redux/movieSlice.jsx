@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
-
+import dataEl from "../../data.json";
 const initialState = {
-  data: JSON.parse(localStorage.getItem("moviesData")) || [],
+  data: JSON.parse(localStorage.getItem("moviesData")) || dataEl,
   filter: "all", // 'all', 'movie', 'tv', 'bookmarked'
 };
 
@@ -45,7 +45,7 @@ export const toggleBookmark = (title) => (dispatch, getState) => {
   console.log("updatedData", updatedData);
 
   // Update Redux store
-  dispatch(setData(updatedData)); 
+  dispatch(setData(updatedData));
   // Update local storage
   localStorage.setItem("moviesData", JSON.stringify(updatedData)); // Store updated data
 };

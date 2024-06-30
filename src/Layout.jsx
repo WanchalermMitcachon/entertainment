@@ -1,6 +1,4 @@
 import { useEffect, useState } from "react";
-import { setData } from "./redux/movieSlice";
-import dataEl from "../data.json";
 import Navbar from "./components/Navbar/index";
 import Home from "./components/Content/Home/index";
 import SearchBar from "./components/Navbar/SearchBar";
@@ -9,7 +7,7 @@ function Layout() {
   const [currentNav, setCurrentNav] = useState("Home");
   const [searchQuery, setSearchQuery] = useState("");
 
-  return (
+  sreturn (
     <div className="flex w-screen h-screen ">
       <div
         className="hidden lg:bg-semiDarkBlue lg:flex lg:justify-center 
