@@ -58,7 +58,7 @@ function Login() {
           {" "}
           <h2 className="text-3xl font-light ">Login</h2>
           <div className="text-sm text-yellow-400">
-            <p>Quick access</p>
+            <p>Quick access.</p>
             <p>ID: test@gmail.com</p>
             <p>PW: 123456</p>
           </div>
